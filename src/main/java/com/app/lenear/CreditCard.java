@@ -3,7 +3,7 @@ package com.app.lenear;
 import java.math.BigDecimal;
 
 final class CreditCard implements PaymentMethod {
-    private String cardNumber;
+    private final String cardNumber;
 
     public CreditCard(String cardNumber) {
         this.cardNumber = cardNumber;
@@ -16,7 +16,7 @@ final class CreditCard implements PaymentMethod {
 }
 
 final class BankTransfer implements PaymentMethod {
-    private String accountNumber;
+    private final String accountNumber;
 
     public BankTransfer(String accountNumber) {
         this.accountNumber = accountNumber;
@@ -29,7 +29,7 @@ final class BankTransfer implements PaymentMethod {
 }
 
 final class Wallet implements PaymentMethod {
-    private String walletId;
+    private final String walletId;
 
     public Wallet(String walletId) {
         this.walletId = walletId;
